@@ -1,2 +1,3 @@
 rootProject.name = 'nixers.net-style-generator'
+include 'net.nixers.mrtnrdl.style-generator'
 

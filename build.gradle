@@ -2,7 +2,7 @@ group 'nixers.net-style-generator'
 version '0.1-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.0.5'
+    ext.kotlin_version = '1.1.1'
 
     repositories {
         mavenCentral()
@@ -13,11 +13,18 @@ buildscript {
 }
 
 apply plugin: 'kotlin'
+apply plugin: 'application'
 
 repositories {
     mavenCentral()
 }
 
+
+mainClassName = 'net.nixers.mrtnrdl.stylegenerator.controller.Generator'
+applicationDefaultJvmArgs = ["-Xms512m", "-Xmx1g"]
+
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
+    testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
 }
