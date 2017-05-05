@@ -1,7 +1,17 @@
 /**
  * Created by mrtn on 3/24/17.
  */
-package net.nixers.mrtnrdl.stylegenerator.controller
+package stylegenerator
+
+fun main(args: Array<String>) {
+
+    // create template
+    val gen = Generator()
+
+    val css = gen.generateCss("", "", "", "", "", "", "", "")
+
+    println(css)
+}
 
 class Generator {
 
@@ -10,14 +20,9 @@ class Generator {
         return "empty template."
     }
 
-    public fun main(args: Array<String>) {
 
-        // create template
-        val css = Generator().generateCss("", "", "", "", "", "", "", "")
 
-        // print template
-        println(css)
-    }
+
 
 }
 
