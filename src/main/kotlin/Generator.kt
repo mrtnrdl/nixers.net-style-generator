@@ -1,7 +1,7 @@
 /**
  * Created by mrtn on 3/24/17.
  */
-package stylegenerator
+package net.nixers.mrtnrdl.stylegenerator
 
 fun main(args: Array<String>) {
 

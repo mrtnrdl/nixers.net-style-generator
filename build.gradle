@@ -16,7 +16,7 @@ buildscript {
 apply plugin: 'kotlin'
 apply plugin: 'application'
 
-mainClassName = 'stylegenerator.GeneratorKt'
+mainClassName = 'net.nixers.mrtnrdl.stylegenerator.GeneratorKt'
 
 defaultTasks 'run'
 
