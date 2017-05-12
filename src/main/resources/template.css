@@ -1,13 +1,13 @@
 /*
  * Main colors are:
- * #424242 rgb(66, 66, 66)    -> text
- * #F4F3F2 rgb(244, 243, 242) -> background
- * #026CB1 rgb(2, 108, 177)   -> links & active color
- * #ADCBE7 rgb(173, 203, 231) -> table headings
- * #E0E0E0 rgb(224, 224, 224) -> Bold lines back
- * #CCCCCC rgb(204, 204, 204) -> light separation for quotes
- * #E79397 rgb(231, 147, 151) -> alert background
- * #15A018 rgb(21, 160, 24)   -> green (online status, success)
+ * <TEXT> -> text
+ * <BACKGROUND>  -> background
+ * <LINK> -> links & active color
+ * <HEADER> -> table headings
+ * <HIGHLIGHT_A> -> Bold lines back
+ * <SEPERATOR_LIGHT> -> light separation for quotes
+ * <ALERT_BG> -> alert background
+ * <GREEN> -> green (online status, success)
  */
 body {
     font-family: Verdana, Arial, Sans-Serif;
@@ -33,21 +33,21 @@ input[type="button"], input[type="submit"] {
 , #boardstats_e .smalltext a span
 , .menu ul a:hover, .menu ul a:active
 , .usernames {
-    color: #026CB1 !important;
+    color: <LINK> !important;
 }
 a:link
 , a:visited
 , .button
 , input[type="button"], input[type="submit"]
 , a:hover, a:active {
-    color: #026CB1;
+    color: <LINK>;
 }
 .valid_field
 , input.textbox
 , textarea
 , select
 , .editor_control_bar {
-    border: 1px solid #026CB1;
+    border: 1px solid <LINK>;
 }
 
 body
@@ -66,15 +66,15 @@ body
 , input[type="button"], input[type="submit"]
 , .pagination_breadcrumb
 .editor {
-    background: #F4F3F2;
+    background: <BACKGROUND>;
 }
 .pagination_breadcrumb {
-    border: 1px solid #F4F3F2;
+    border: 1px solid <BACKGROUND>;
 }
 
 #panel
 , .trow2 {
-    background: #E0E0E0;
+    background: <HIGHLIGHT_A>;
 }
 
 body
@@ -111,18 +111,18 @@ body
 , ._minus
 , ._plus
 , .offline {
-    color: #424242;
+    color: <TEXT>;
 }
 .tborder.postbit_table
 , .autocomplete
 , .popup_menu {
-    border: 1px solid #424242;
+    border: 1px solid <TEXT>;
 }
 .post_buttons {
-    border-top: 1px solid #424242;
+    border-top: 1px solid <TEXT>;
 }
 hr {
-    background-color: #424242;
+    background-color: <TEXT>;
 }
 
 .popup_menu .popup_item:hover
@@ -130,13 +130,13 @@ hr {
 , .thead
 , .tfoot
 , .tcat {
-    background: #ADCBE7;
+    background: <HEADER>;
 }
 .pagination .pagination_current
 , .button
 , input[type="button"], input[type="submit"]
 , .pagination a {
-    border: 1px solid #ADCBE7;
+    border: 1px solid <HEADER>;
 }
 
 .pagination_breadcrumb {
@@ -174,7 +174,7 @@ blockquote cite
 , .error_message
 , .invalid_field
 , .validation_error {
-    color: #E79397;
+    color: <ALERT_BG>;
 }
 ._minus
 , .red_alert {
@@ -185,7 +185,7 @@ blockquote cite
 , ._plus
 , .validation_success
 , .success_message {
-    color: #15A018;
+    color: <GREEN>;
 }
 
 /* END - COLORS */
